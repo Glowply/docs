@@ -1,0 +1,80 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "Glowply",
+  "theme": "almond",
+  "favicon": "https://media.brand.dev/33a7cd85-032c-4105-a675-5864dc82ff37.png",
+  "colors": {
+    "primary": "#449c84",
+    "light": "#8edeb7",
+    "dark": "#147367"
+  },
+  "font": {
+    "headings": {
+      "family": "Inter Tight"
+    },
+    "body": {
+      "family": "Cairo"
+    }
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Start Free Trial",
+      "href": "https://glowply.com/start-now"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "dashboard-overview"
+            ]
+          },
+          {
+            "group": "Your Website",
+            "pages": [
+              "website/editor",
+              "website/pages",
+              "website/domain",
+              "website/design"
+            ]
+          },
+          {
+            "group": "Online Store",
+            "pages": [
+              "store/products",
+              "store/orders",
+              "store/payments",
+              "store/shipping"
+            ]
+          },
+          {
+            "group": "Account & Billing",
+            "pages": [
+              "account/profile",
+              "account/subscription",
+              "account/invoices"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "faq",
+              "troubleshooting",
+              "contact-support"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "socials": {}
+  }
+}

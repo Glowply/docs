@@ -1,0 +1,82 @@
+{
+  "projectType": "saas",
+  "projectName": "Glowply",
+  "projectDescription": "An AI-powered website and e-commerce store builder that creates a professional, fully-hosted site in under a minute — no technical experience required.",
+  "theme": "almond",
+  "primaryColor": "#449c84",
+  "lightColor": "#147367",
+  "darkColor": "#8edeb7",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "dashboard-overview"
+            ]
+          },
+          {
+            "group": "Your Website",
+            "pages": [
+              "website/editor",
+              "website/pages",
+              "website/domain",
+              "website/design"
+            ]
+          },
+          {
+            "group": "Online Store",
+            "pages": [
+              "store/products",
+              "store/orders",
+              "store/payments",
+              "store/shipping"
+            ]
+          },
+          {
+            "group": "Account & Billing",
+            "pages": [
+              "account/profile",
+              "account/subscription",
+              "account/invoices"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "faq",
+              "troubleshooting",
+              "contact-support"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "AI-generated website creation in under 45 seconds",
+    "Drag-and-drop visual editor — no coding needed",
+    "Full Arabic-language dashboard and interface",
+    "Integrated e-commerce store with shopping cart",
+    "Built-in payment gateway and shipping management",
+    "Custom domain support",
+    "Free SSL certificate and managed hosting (99.9% uptime)",
+    "14-day free trial, no credit card required"
+  ],
+  "publicApiSurface": [
+    "Website creation wizard (site name → auto-generated site)",
+    "Drag-and-drop page editor",
+    "Product catalog management",
+    "Order management dashboard",
+    "Payment gateway configuration",
+    "Shipping settings",
+    "Custom domain connection",
+    "Branding and theme customization (colors, fonts, images)",
+    "Account and subscription management",
+    "Support ticket submission"
+  ]
+}

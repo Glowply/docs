@@ -1,0 +1,66 @@
+---
+title: "Connect a custom domain name to your Glowply website"
+description: "Learn how to use your free Glowply subdomain or connect your own custom domain, including step-by-step DNS record setup and SSL certificate details."
+---
+
+Every Glowply site gets a web address from the moment it is created. You can use the free subdomain Glowply provides, or connect a domain you already own for a more professional appearance.
+
+## Your two domain options
+
+<CardGroup cols={2}>
+  <Card title="Free subdomain" icon="globe">
+    Available on all plans. Your site address takes the form `mybusiness.myglowply.com`. You choose the subdomain name during signup.
+  </Card>
+  <Card title="Custom domain" icon="link" href="/account/subscription">
+    Available on paid plans. Connect a domain you own (for example, `mybusiness.com`) and use it as your primary site address.
+  </Card>
+</CardGroup>
+
+## Connect a custom domain
+
+<Steps>
+  <Step title="Upgrade to a paid plan">
+    Custom domains require a paid Glowply plan. Go to [account settings](/account/subscription) to upgrade if you have not already done so.
+  </Step>
+  <Step title="Open domain settings">
+    From the dashboard, click **Settings**, then click **Domain**.
+  </Step>
+  <Step title="Enter your domain">
+    In the **Custom Domain** field, type your domain name (for example, `mybusiness.com` or `www.mybusiness.com`) and click **Save**.
+  </Step>
+  <Step title="Update your DNS records">
+    Log in to the control panel of your domain registrar (the service where you purchased the domain, such as GoDaddy, Namecheap, or Google Domains). Add the following DNS record:
+
+    - **Record type**: `CNAME`
+    - **Name / Host**: `www` (or `@` if pointing the root domain)
+    - **Value / Points to**: the address shown in your Glowply domain settings panel
+
+    If your registrar does not support a root `CNAME`, use an `A` record instead and point it to the IP address shown in your Glowply domain settings.
+  </Step>
+  <Step title="Wait for propagation">
+    DNS changes can take up to 48 hours to take effect worldwide, though most updates complete within a few hours. Glowply will show a confirmation banner in your domain settings once the connection is verified.
+  </Step>
+</Steps>
+
+<Note>
+  DNS propagation time depends on your registrar and your previous DNS TTL (time-to-live) settings. If your domain is not connecting after 48 hours, double-check that the record type and value are entered exactly as shown in your Glowply domain settings.
+</Note>
+
+## SSL certificate
+
+Glowply provisions a free SSL certificate for every site automatically — including sites using a custom domain. You do not need to purchase or configure a certificate yourself. Once your DNS has propagated, your site will be accessible over `https://`.
+
+<Tip>
+  While waiting for DNS propagation, your site remains fully live and accessible at your `myglowply.com` subdomain address.
+</Tip>
+
+## Related pages
+
+<CardGroup cols={2}>
+  <Card title="Account & subscription" icon="credit-card" href="/account/subscription">
+    Upgrade your plan to unlock custom domain support.
+  </Card>
+  <Card title="Website editor" icon="pen-to-square" href="/website/editor">
+    Continue customizing your site content.
+  </Card>
+</CardGroup>
