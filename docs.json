@@ -16,17 +16,17 @@
       "family": "Cairo"
     }
   },
-  "navbar": {
-    "primary": {
-      "type": "button",
-      "label": "ابدأ الآن",
-      "href": "https://glowply.com/start-now"
-    }
-  },
   "navigation": {
     "languages": [
       {
         "language": "ar",
+        "navbar": {
+          "primary": {
+            "type": "button",
+            "label": "ابدأ الآن",
+            "href": "https://glowply.com/start-now"
+          }
+        },
         "groups": [
           {
             "group": "البداية",
@@ -100,6 +100,13 @@
       },
       {
         "language": "en",
+        "navbar": {
+          "primary": {
+            "type": "button",
+            "label": "Start now",
+            "href": "https://glowply.com/start-now"
+          }
+        },
         "groups": [
           {
             "group": "Getting started",
