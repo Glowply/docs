@@ -19,55 +19,154 @@
   "navbar": {
     "primary": {
       "type": "button",
-      "label": "Start Free Trial",
+      "label": "ابدأ الآن",
       "href": "https://glowply.com/start-now"
     }
   },
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Documentation",
+        "language": "ar",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "البداية",
             "pages": [
-              "introduction",
-              "quickstart",
-              "dashboard-overview"
+              "ar/introduction",
+              "ar/how-glowply-works",
+              "ar/quickstart",
+              "ar/account-verification",
+              "ar/logging-in"
             ]
           },
           {
-            "group": "Your Website",
+            "group": "الحساب والفوترة",
             "pages": [
-              "website/editor",
-              "website/pages",
-              "website/domain",
-              "website/design"
+              "ar/account/portal-overview",
+              "ar/account/subscription",
+              "ar/account/wallet",
+              "ar/account/payments",
+              "ar/account/renewals-and-past-due",
+              "ar/account/account-settings",
+              "ar/account/site-management"
             ]
           },
           {
-            "group": "Online Store",
+            "group": "موقعك",
             "pages": [
-              "store/products",
-              "store/orders",
-              "store/payments",
-              "store/shipping"
+              "ar/site/dashboard-overview",
+              "ar/site/builder-overview",
+              "ar/site/templates-library",
+              "ar/site/builder-library",
+              "ar/site/elements-manager",
+              "ar/site/maintenance-mode",
+              "ar/site/pages",
+              "ar/site/media",
+              "ar/site/blog"
             ]
           },
           {
-            "group": "Account & Billing",
+            "group": "المتجر",
             "pages": [
-              "account/profile",
-              "account/subscription",
-              "account/invoices"
+              "ar/store/store-overview",
+              "ar/store/products",
+              "ar/store/categories-tags",
+              "ar/store/attributes",
+              "ar/store/orders",
+              "ar/store/customers",
+              "ar/store/coupons",
+              "ar/store/reviews",
+              "ar/store/form-submissions",
+              "ar/store/store-analytics"
+            ]
+          },
+          {
+            "group": "التسويق",
+            "pages": [
+              "ar/marketing/seo",
+              "ar/marketing/site-analytics",
+              "ar/marketing/journeys",
+              "ar/marketing/live-events"
+            ]
+          },
+          {
+            "group": "المساعدة",
+            "pages": [
+              "ar/faq",
+              "ar/troubleshooting",
+              "ar/contact-support"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "en",
+        "groups": [
+          {
+            "group": "Getting started",
+            "pages": [
+              "en/introduction",
+              "en/how-glowply-works",
+              "en/quickstart",
+              "en/account-verification",
+              "en/logging-in"
+            ]
+          },
+          {
+            "group": "Account & billing",
+            "pages": [
+              "en/account/portal-overview",
+              "en/account/subscription",
+              "en/account/wallet",
+              "en/account/payments",
+              "en/account/renewals-and-past-due",
+              "en/account/account-settings",
+              "en/account/site-management"
+            ]
+          },
+          {
+            "group": "Your site",
+            "pages": [
+              "en/site/dashboard-overview",
+              "en/site/builder-overview",
+              "en/site/templates-library",
+              "en/site/builder-library",
+              "en/site/elements-manager",
+              "en/site/maintenance-mode",
+              "en/site/pages",
+              "en/site/media",
+              "en/site/blog"
+            ]
+          },
+          {
+            "group": "Store",
+            "pages": [
+              "en/store/store-overview",
+              "en/store/products",
+              "en/store/categories-tags",
+              "en/store/attributes",
+              "en/store/orders",
+              "en/store/customers",
+              "en/store/coupons",
+              "en/store/reviews",
+              "en/store/form-submissions",
+              "en/store/store-analytics"
+            ]
+          },
+          {
+            "group": "Marketing",
+            "pages": [
+              "en/marketing/seo",
+              "en/marketing/site-analytics",
+              "en/marketing/journeys",
+              "en/marketing/live-events"
             ]
           },
           {
             "group": "Help",
             "pages": [
-              "faq",
-              "troubleshooting",
-              "contact-support"
+              "en/faq",
+              "en/troubleshooting",
+              "en/contact-support"
             ]
           }
         ]
