@@ -83,6 +83,11 @@
             "group": "التسويق",
             "pages": [
               "ar/marketing/seo",
+              "ar/marketing/seo/search-appearance",
+              "ar/marketing/seo/social-previews",
+              "ar/marketing/seo/sitemap-and-indexing",
+              "ar/marketing/seo/page-extras",
+              "ar/marketing/seo/redirects",
               "ar/marketing/site-analytics",
               "ar/marketing/journeys",
               "ar/marketing/live-events"
@@ -163,6 +168,11 @@
             "group": "Marketing",
             "pages": [
               "en/marketing/seo",
+              "en/marketing/seo/search-appearance",
+              "en/marketing/seo/social-previews",
+              "en/marketing/seo/sitemap-and-indexing",
+              "en/marketing/seo/page-extras",
+              "en/marketing/seo/redirects",
               "en/marketing/site-analytics",
               "en/marketing/journeys",
               "en/marketing/live-events"
