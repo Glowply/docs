@@ -41,11 +41,9 @@
           {
             "group": "الحساب والفوترة",
             "pages": [
-              "ar/account/portal-overview",
+              "ar/account/overview",
               "ar/account/subscription",
-              "ar/account/wallet",
-              "ar/account/payments",
-              "ar/account/renewals-and-past-due",
+              "ar/account/billing-and-payments",
               "ar/account/account-settings",
               "ar/account/site-management"
             ]
@@ -126,11 +124,9 @@
           {
             "group": "Account & billing",
             "pages": [
-              "en/account/portal-overview",
+              "en/account/overview",
               "en/account/subscription",
-              "en/account/wallet",
-              "en/account/payments",
-              "en/account/renewals-and-past-due",
+              "en/account/billing-and-payments",
               "en/account/account-settings",
               "en/account/site-management"
             ]
@@ -190,6 +186,40 @@
       }
     ]
   },
+  "redirects": [
+    {
+      "source": "/en/account/portal-overview",
+      "destination": "/en/account/overview"
+    },
+    {
+      "source": "/en/account/wallet",
+      "destination": "/en/account/billing-and-payments"
+    },
+    {
+      "source": "/en/account/payments",
+      "destination": "/en/account/billing-and-payments"
+    },
+    {
+      "source": "/en/account/renewals-and-past-due",
+      "destination": "/en/account/subscription"
+    },
+    {
+      "source": "/ar/account/portal-overview",
+      "destination": "/ar/account/overview"
+    },
+    {
+      "source": "/ar/account/wallet",
+      "destination": "/ar/account/billing-and-payments"
+    },
+    {
+      "source": "/ar/account/payments",
+      "destination": "/ar/account/billing-and-payments"
+    },
+    {
+      "source": "/ar/account/renewals-and-past-due",
+      "destination": "/ar/account/subscription"
+    }
+  ],
   "footer": {
     "socials": {}
   }
