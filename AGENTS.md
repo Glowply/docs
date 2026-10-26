@@ -44,7 +44,7 @@ Document both areas. Make clear which area a task lives in.
 | Products | المنتجات | |
 | Orders | الطلبات | |
 | Customers | العملاء | |
-| Categories | التصنيفات | |
+| Categories | الأقسام | Singular القسم. Was التصنيفات until 2026-10-26, when the dashboard switched to الأقسام |
 | Tags | الوسوم | |
 | Attributes | الخصائص | |
 | Reviews | المراجعات | |
