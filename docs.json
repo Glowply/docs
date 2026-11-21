@@ -58,6 +58,7 @@
               "ar/site/elements-manager",
               "ar/site/maintenance-mode",
               "ar/site/pages",
+              "ar/site/popups",
               "ar/site/media",
               "ar/site/blog"
             ]
@@ -88,7 +89,8 @@
               "ar/marketing/seo/redirects",
               "ar/marketing/site-analytics",
               "ar/marketing/journeys",
-              "ar/marketing/live-events"
+              "ar/marketing/live-events",
+              "ar/marketing/tracking-codes"
             ]
           },
           {
@@ -141,6 +143,7 @@
               "en/site/elements-manager",
               "en/site/maintenance-mode",
               "en/site/pages",
+              "en/site/popups",
               "en/site/media",
               "en/site/blog"
             ]
@@ -171,7 +174,8 @@
               "en/marketing/seo/redirects",
               "en/marketing/site-analytics",
               "en/marketing/journeys",
-              "en/marketing/live-events"
+              "en/marketing/live-events",
+              "en/marketing/tracking-codes"
             ]
           },
           {

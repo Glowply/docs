@@ -59,6 +59,14 @@ Document both areas. Make clear which area a task lives in.
 | Store analytics | تحليلات المتجر | |
 | Journeys | الرحلات | |
 | Live events | الأحداث المباشرة | |
+| Analytics (menu group) | التحليلات | The side menu's group of sales reports since 2026-11-21. The page that explains them is still "Store analytics / تحليلات المتجر" |
+| Discounts (menu label) | الخصومات | What the side menu calls coupons, under Products. The concept stays "Coupons / القسائم" |
+| Store (menu group) | المتجر | Since 2026-11-21 the menu group that holds Shipping (الشحن) and Payments (المدفوعات) |
+| Tracking codes | أكواد التتبع | The ad-pixels page, under Marketing |
+| pixel | بيكسل | An ad platform's tracking code (Meta, TikTok, Snapchat, X, Google Ads) |
+| Popups | النوافذ المنبثقة | Under Store design |
+| Branding & contact buttons | الهوية وأزرار التواصل | The menu's name for the page titled «تخصيص سريع» |
+| Ask glowply | اسأل glowply | The in-dashboard assistant; "glowply" stays in Latin letters |
 
 Product facts to keep accurate: address is always `<name>.myglowply.com`; currency is **EGP** (ج.م); HTTPS/SSL is automatic; payments run through **Kashier** (the customer just sees a payment page — card or wallet); support is **support@myglowply.com**, live chat, and WhatsApp.
 
