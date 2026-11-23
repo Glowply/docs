@@ -62,7 +62,7 @@ Document both areas. Make clear which area a task lives in.
 | Analytics (menu group) | التحليلات | The side menu's group of sales reports since 2026-11-21. The page that explains them is still "Store analytics / تحليلات المتجر" |
 | Discounts (menu label) | الخصومات | What the side menu calls coupons, under Products. The concept stays "Coupons / القسائم" |
 | Store (menu group) | المتجر | Since 2026-11-21 the menu group that holds Shipping (الشحن) and Payments (المدفوعات) |
-| Tracking codes | أكواد التتبع | The ad-pixels page, under Marketing |
+| Connect your ads | ربط الإعلانات | The ad-pixels page, under Marketing. Was "Tracking codes / أكواد التتبع" until 2026-11-23; the doc page keeps its address `marketing/tracking-codes` |
 | pixel | بيكسل | An ad platform's tracking code (Meta, TikTok, Snapchat, X, Google Ads) |
 | Popups | النوافذ المنبثقة | Under Store design |
 | Branding & contact buttons | الهوية وأزرار التواصل | The menu's name for the page titled «تخصيص سريع» |
