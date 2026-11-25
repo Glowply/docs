@@ -1,0 +1,163 @@
+---
+title: "Connect your ads (ad pixels)"
+description: "Connect your Meta, TikTok, Snapchat, X, and Google Ads pixels to your store. Paste each pixel's ID once and Glowply sends every store event for you — from the browser and, with an access token, from the server too."
+---
+
+**Connect your ads (ربط الإعلانات)** is where you connect your ad platforms' **pixels** to your store. A pixel tells the ad platform what a visitor did after clicking your ad — viewed a product, added it to the cart, started checkout, placed an order. The platform uses that to measure your ads and to show them to people who are likely to buy.
+
+You'll find it in your **site dashboard**, under **Marketing (التسويق) → Connect your ads (ربط الإعلانات)**.
+
+<Info>
+  Connect your ads lives in your **site dashboard** — the place you land when you sign in. Your Glowply billing is separate; see [Your account & billing](/en/account/overview). New here? See [Site dashboard overview](/en/site/dashboard-overview).
+</Info>
+
+<Warning>
+  **Add the ID only, and nothing else.** Don't use your ad platform's event builder, and don't connect the pixel to the thank-you page or to any button. Glowply already sends every event to your pixel automatically. Setting events up yourself makes every order show up twice, and your ad numbers stop being accurate.
+</Warning>
+
+## What Glowply sends for you
+
+Once a pixel is connected, these events are sent on their own. You don't set any of them up.
+
+| Event | When it's sent |
+|---|---|
+| **Page view** | A visitor opens any page of your store. |
+| **View content** | A visitor opens a product page. |
+| **Add to cart** | A visitor adds a product to the cart. |
+| **Initiate checkout** | A visitor opens the checkout page with something in the cart. |
+| **Purchase** | An order is paid. Each order is sent once, even if the customer reloads the thank-you page. |
+
+## Supported platforms
+
+| Platform | What you paste | For server-side sending |
+|---|---|---|
+| **Meta (Facebook and Instagram)** | Pixel ID | An access token |
+| **TikTok** | Pixel ID | An access token |
+| **Snapchat** | Pixel ID | An access token |
+| **X (Twitter)** | Pixel ID, and an event ID for each event | Four API keys |
+| **Google Ads** | Conversion ID and your purchase conversion label | Not available — see [Google Ads](#google-ads) |
+
+## Connect a pixel
+
+<Steps>
+  <Step title="Open Connect your ads">
+    In the side menu, choose **Marketing (التسويق)**, then **Connect your ads (ربط الإعلانات)**.
+  </Step>
+  <Step title="Paste the pixel ID">
+    Find your platform's section and paste the ID into **Pixel ID** — the ID only, not the whole code your ad platform gives you.
+  </Step>
+  <Step title="Add more pixels if you need to">
+    Choose **Add another pixel (ضيف بيكسل تاني)** for a second pixel on the same platform — for example, your own and your media buyer's. You can have up to 10 on each platform.
+  </Step>
+  <Step title="Save">
+    Choose **Save (حفظ)**. The pixel starts working on your store right away.
+  </Step>
+</Steps>
+
+To remove a pixel, press the bin button beside it, then **Save**.
+
+<Check>
+  Use your ad platform's own testing tool to confirm events are arriving. If you browse your store with an ad blocker on, your own visits may not show up — that's the blocker, not your store.
+</Check>
+
+## Server-side sending (optional)
+
+Ad blockers and some browsers stop part of what a pixel sends. When you add a pixel's **access token**, Glowply also sends the same events from the server, so your ads see more of your orders. Every event is still counted once.
+
+Each pixel has its own token, pasted in the **Server-side sending (optional)** part of its row. Here's where to find it:
+
+<AccordionGroup>
+  <Accordion title="Meta (Facebook and Instagram)">
+    In **Meta Events Manager**, open your pixel, then **Settings → Conversions API → Generate access token**. Paste it into **Access token**.
+  </Accordion>
+  <Accordion title="TikTok">
+    In **TikTok Events Manager**, open your pixel, then **Settings → Generate Access Token**. Paste it into **Access token**.
+  </Accordion>
+  <Accordion title="Snapchat">
+    In **Snapchat Ads Manager**, open **Business Details → Conversions API Tokens → Generate Token**. Paste it into **Access token**.
+  </Accordion>
+  <Accordion title="X (Twitter)">
+    X needs four keys instead of one token: **API key**, **API key secret**, **Access token**, and **Access token secret**. They come from an X developer app that has Ads API access. Without them your X pixel still works from the browser.
+  </Accordion>
+</AccordionGroup>
+
+After you save, a token is shown as dots followed by its last four characters, so nobody looking at your screen can read it. To replace it, type the new one over it. To remove it, empty the box.
+
+### Check that it's working
+
+Under each pixel that sends from the server, a line tells you how its last event went:
+
+| What you see | What it means |
+|---|---|
+| **Saved. The result shows here after the first event.** | The token is saved and nothing has been sent yet. Wait for the next visitor. |
+| **Server-side sending is working** | The platform accepted the last event. |
+| **The platform refused the last event** | The platform said no. Its reason is shown underneath, in English — usually a token that is wrong or has expired. Generate a new token and paste it in. |
+
+<Note>
+  Page views are sent from the browser only. Orders you create yourself inside the dashboard aren't reported to your ad platforms — only orders your customers place on your store.
+</Note>
+
+## X (Twitter): event IDs
+
+X doesn't use fixed event names. You create each event in **X Ads**, and X gives it an ID that looks like `tw-xxxxx-xxxxx`. Paste each one into its box under **Event IDs from X Ads (معرفات الأحداث من إعلانات إكس)**:
+
+- **Product view event ID**
+- **Add to cart event ID**
+- **Checkout started event ID**
+- **Purchase event ID**
+
+An event with no ID isn't sent to X. If you only care about orders, the purchase ID alone is enough.
+
+## Google Ads
+
+Google Ads has no access token, so it works a little differently:
+
+<Steps>
+  <Step title="Paste your Conversion ID">
+    It starts with `AW-`. You can paste it with or without the `AW-`.
+  </Step>
+  <Step title="Paste your purchase conversion label">
+    In **Google Ads**, open **Goals → Conversions**, choose your purchase conversion, then **Tag setup**. Paste the label into **Purchase conversion label (Conversion label بتاع الشراء)**.
+  </Step>
+  <Step title="Turn on enhanced conversions">
+    In the same place in Google Ads, turn on **enhanced conversions**. It lets Google match more of your orders to your ads.
+  </Step>
+</Steps>
+
+## Common questions
+
+<AccordionGroup>
+  <Accordion title="Every order shows up twice in my pixel. Why?">
+    An event was set up by hand as well — with the platform's event builder, or by linking the pixel to the thank-you page or a button. Remove that. Glowply already sends every event.
+  </Accordion>
+  <Accordion title="Do I need server-side sending?">
+    No. Your pixel works without it. It's worth adding once you spend on ads regularly, because it lets the platform see orders the browser alone would miss.
+  </Accordion>
+  <Accordion title="I pasted the whole code instead of the ID. What now?">
+    For Meta, TikTok, and Snapchat, Glowply picks the ID out of the code when you save. Check that the box now shows only the ID. If it's empty, paste the ID on its own.
+  </Accordion>
+  <Accordion title="Can I use more than one ad platform at once?">
+    Yes. Fill in each platform you use. They work side by side.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="See your store sales" icon="chart-pie" href="/en/store/store-analytics">
+    Compare what your ad platform reports with your own sales reports.
+  </Card>
+  <Card title="See your visitors" icon="chart-simple" href="/en/marketing/site-analytics">
+    Find out how many people visit and where they come from.
+  </Card>
+  <Card title="Manage your orders" icon="receipt" href="/en/store/orders">
+    Open the orders your ads brought in.
+  </Card>
+  <Card title="Improve your search visibility" icon="magnifying-glass" href="/en/marketing/seo">
+    Help people find your store on Google without paying for the click.
+  </Card>
+</CardGroup>
+
+<Info>
+  Need a hand? Reach our team by live chat, WhatsApp, or email at **support@myglowply.com**. See [Contact support](/en/contact-support).
+</Info>

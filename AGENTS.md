@@ -70,7 +70,8 @@ The site dashboard labels below are what the customer actually sees (confirmed a
 | Live events | اللي بيحصل دلوقتي | |
 | Journeys | رحلة العميل | Customer journey |
 | Website Analytics | زوار الموقع | Site visitors |
-| Connect your ads | ربط الإعلانات | Ad pixels |
+| Connect your ads | ربط الإعلانات | Ad pixels; the doc page keeps its address `marketing/tracking-codes` (was "Tracking codes / أكواد التتبع") |
+| pixel | بيكسل | An ad platform's tracking code (Meta, TikTok, Snapchat, X, Google Ads) |
 | Settings | الإعدادات | → General settings, Translate your site, Subscription & Billing |
 | Ask Glowply (assistant) | اسأل glowply | In-dashboard AI assistant; answers from the Glowply guide (these docs) |
 
