@@ -10,57 +10,71 @@
 
 ## The product, in one paragraph
 
-A customer signs up at `glowply.com` → verifies their phone by code (WhatsApp first, SMS fallback) → Glowply automatically builds them a hosted website + store on a `<name>.myglowply.com` address (HTTPS is automatic). They then use **two areas**:
+A customer signs up at `glowply.com` → verifies their phone by code (WhatsApp first, SMS fallback) → Glowply automatically builds them a hosted website + store on a `<name>.myglowply.com` address (HTTPS is automatic). They sign in at `glowply.com` and land directly in **one place**:
 
-1. **The account portal** at `/my-account/` — Dashboard, Subscription, Wallet, Account, Site management. Billing is a **prepaid wallet**: you top up, and the monthly subscription renews itself from the wallet balance. A free trial starts automatically; after it, renewals are charged from the wallet.
-2. **Their site's own dashboard** — Store, Pages, Media, Posts, Marketing, and the **Builder** — reached from the portal via a one-click "Glowply dashboard" button. This is where they build pages and run the store.
+**Their site dashboard** — a white-labeled admin (Arabic + English toggle) where they run everything: the **Home page** (setup checklist, store stats, recent orders), **Store** (payments, shipping), **Products** (categories, product options, reviews, discounts), **Customers**, **Analytics**, **Branding & contact buttons**, **Store design** (pages, templates, popups) built with the **Builder**, **Content** (blog, media), **Marketing**, the **Ask Glowply** assistant, and **Settings** — which now holds **Subscription & Billing**. Billing is a **prepaid wallet**: you top up (bank card or mobile wallet) and the monthly subscription renews itself from the wallet balance. A free trial starts automatically; after it, renewals are charged from the wallet.
 
-Document both areas. Make clear which area a task lives in.
+The old **account portal** at `/my-account/` has been **retired** and now forwards into the site dashboard. There is one area, not two — document the dashboard and its sections, and make clear which section a task lives in.
+
+The dashboard's setup checklist is 7 steps: **Your design → Your logo → Categories → Products → Delivery → Test order → Share link** (التصميم ← اللوجو ← الأقسام ← المنتجات ← التوصيل ← أوردر تجريبي ← شارك اللينك).
 
 ## Terminology (use these exact terms; never invent synonyms)
+
+The site dashboard labels below are what the customer actually sees (confirmed against the live dashboard). Several changed from earlier terms — the old term is noted so you can catch stale copy.
 
 | English | Arabic | Notes |
 |---|---|---|
 | Glowply | جلوبلي | Brand. Tagline: "Where ideas glow." |
-| account portal / your account | لوحة حسابك | The `/my-account/` area |
-| Dashboard | لوحة التحكم | Both the portal home and the site dashboard home |
+| site dashboard / your dashboard | لوحة تحكم موقعك | The one place you work. White-labeled admin; Arabic ⇄ English toggle |
+| Home page | الصفحة الرئيسية | Dashboard home: setup checklist, store stats, recent orders |
+| account portal | — (retired) | Old `/my-account/` area — retired; the URL now forwards into the site dashboard |
+| Subscription & Billing | الاشتراك والفواتير | Under **Settings**. Store owner only. Live and self-serve |
 | Subscription | الاشتراك | Trial → active → past due → cancelled |
 | free trial | الفترة التجريبية | Starts automatically when the site is created |
-| Wallet | المحفظة | Prepaid balance |
-| wallet balance | رصيد المحفظة | |
-| top up | شحن (المحفظة) | Add credit in 1 / 3 / 6 / 12-month bundles |
-| renewal | التجديد | Charged from the wallet, not a card |
+| Wallet / wallet balance | المحفظة / رصيد المحفظة | Prepaid balance |
+| top up | شحن (المحفظة) | Self-serve in Subscription & Billing: cover next renewal, or 1 / 3 / 6 renewals, or a custom amount |
+| renewal | التجديد | Monthly; charged from the wallet, not a card |
 | past due | متأخر الدفع | Renewal failed (wallet too low) |
-| Plan | الباقة | |
+| payment methods | بطاقة بنكية / محفظة موبايل | Bank card (Visa/Mastercard, instant) or mobile wallet (Vodafone Cash, Orange Cash) |
+| Plan | الباقة | One monthly plan |
 | Account (settings) | الحساب | Name/phone editable; email change via support |
 | Site management | إدارة الموقع | SSL, custom domain, open editor |
 | custom domain | النطاق المخصص | Requested via support, not self-serve |
-| the Builder | البلدر | The page editor (white-label of Breakdance) |
-| Template library | مكتبة القوالب | |
+| Store | المتجر | Menu group → Payments (الدفع), Shipping (الشحن) |
+| Payments | الدفع | Under Store |
+| Shipping / delivery | الشحن / التوصيل | Under Store |
+| Products | المنتجات | Menu group → Categories, Product options, Reviews, Discounts |
+| Categories | الأقسام | Singular القسم. Was التصنيفات until 2026-10-26 |
+| Tags | الوسوم | |
+| Product options | خيارات المنتجات | **Was "Attributes" / الخصائص.** Size, color, etc. → product variations |
+| Reviews | التقييمات | **Was المراجعات.** Ratings & feedback on products |
+| Discounts | الخصومات | **Was "Coupons" / القسائم.** Discount codes (one quick-action is still "New Coupon") |
+| Orders | الطلبات | |
+| Customers | العملاء | Menu group → Customers, Customer messages |
+| Customer messages | رسائل العملاء | **Was "Form submissions" / إرسالات النماذج.** Messages from your site's forms |
+| Analytics | التحليلات | Sales / product / revenue reports (also "Store analytics") |
+| Branding & contact buttons | الهوية وأزرار التواصل | Logo, store branding, and contact buttons (WhatsApp etc.) |
+| Store design | تصميم المتجر | Menu group → Pages, Ready-made templates, Popups |
+| Pages | الصفحات | Edited with the Builder |
+| Ready-made templates | القوالب الجاهزة | Template library |
+| Popups | النوافذ المنبثقة | |
+| the Builder | البلدر | The page editor (white-label of Breakdance); reached via Store design → Pages |
 | Builder library | مكتبة البلدر | |
 | Elements manager | مدير العناصر | |
 | Maintenance mode | وضع الصيانة | |
-| Store | المتجر | The online store |
-| Products | المنتجات | |
-| Orders | الطلبات | |
-| Customers | العملاء | |
-| Categories | الأقسام | Singular القسم. Was التصنيفات until 2026-10-26, when the dashboard switched to الأقسام |
-| Tags | الوسوم | |
-| Attributes | الخصائص | |
-| Reviews | المراجعات | |
-| Coupons | القسائم | |
-| Form submissions | إرسالات النماذج | |
-| Pages | الصفحات | |
-| Media library | مكتبة الوسائط | |
-| Blog / Posts | المقالات | |
-| Marketing | التسويق | |
-| SEO | تحسين محركات البحث | |
-| Site analytics | تحليلات الموقع | |
-| Store analytics | تحليلات المتجر | |
-| Journeys | الرحلات | |
-| Live events | الأحداث المباشرة | |
+| Content | المحتوى | Menu group → Blog, Images & files |
+| Blog | المدونة | Was "Posts" / المقالات |
+| Images & files | الصور والملفات | Media library. Under Content |
+| Marketing | التسويق | Menu group → SEO, Live Events, Journeys, Website Analytics, Connect your ads |
+| SEO | الظهور في جوجل | Menu label = "Appear in Google" |
+| Live events | اللي بيحصل دلوقتي | |
+| Journeys | رحلة العميل | Customer journey |
+| Website Analytics | زوار الموقع | Site visitors |
+| Connect your ads | ربط الإعلانات | Ad pixels |
+| Settings | الإعدادات | → General settings, Translate your site, Subscription & Billing |
+| Ask Glowply (assistant) | اسأل glowply | In-dashboard AI assistant; answers from the Glowply guide (these docs) |
 
-Product facts to keep accurate: address is always `<name>.myglowply.com`; currency is **EGP** (ج.م); HTTPS/SSL is automatic; payments run through **Kashier** (the customer just sees a payment page — card or wallet); support is **support@myglowply.com**, live chat, and WhatsApp.
+Product facts to keep accurate: address is always `<name>.myglowply.com`; currency is **EGP** (ج.م); HTTPS/SSL is automatic; billing is a **self-serve prepaid wallet** in **Settings → Subscription & Billing** (top up by **bank card** or **mobile wallet** — Vodafone Cash / Orange Cash); support is **support@myglowply.com**, live chat, and WhatsApp. The in-dashboard **Ask Glowply (اسأل glowply)** assistant answers store owners' questions from these docs.
 
 ## Style preferences
 
@@ -75,7 +89,7 @@ Product facts to keep accurate: address is always `<name>.myglowply.com`; curren
 ## Content boundaries
 
 - Document only what the customer actually sees: the portal and the white-labeled site dashboard. Customers never see raw `wp-admin` chrome.
-- **Never expose internal vendor names** the customer doesn't see: Breakdance (it's "the Builder"), WordPress/WooCommerce (it's "your site"/"the Store"), Enhance, Akedly. Kashier is fine to name (it appears on the payment page).
+- **Never expose internal vendor names** the customer doesn't see: Breakdance (it's "the Builder"), WordPress/WooCommerce (it's "your site"/"the Store"), Enhance, Akedly, Bosta (it's "shipping/delivery"). The current billing page names **no** payment provider — it shows a "certified provider" plus bank-card / mobile-wallet options — so don't name Kashier (or any provider) in customer docs; say "a certified payment provider".
 - Don't document admin-only settings (wallet unit price, plan/trial configuration) — those are internal, not customer-facing.
 - Don't reproduce the full WooCommerce or Breakdance manuals. Cover Glowply's UI and the common tasks thoroughly; keep deep third-party edge cases out.
 - One trial signup per phone number; Egyptian phone numbers at signup; one site per account — reflect these limits where relevant.
