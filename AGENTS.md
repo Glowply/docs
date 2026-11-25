@@ -94,3 +94,13 @@ Product facts to keep accurate: address is always `<name>.myglowply.com`; curren
 - Don't document admin-only settings (wallet unit price, plan/trial configuration) — those are internal, not customer-facing.
 - Don't reproduce the full WooCommerce or Breakdance manuals. Cover Glowply's UI and the common tasks thoroughly; keep deep third-party edge cases out.
 - One trial signup per phone number; Egyptian phone numbers at signup; one site per account — reflect these limits where relevant.
+
+## Improving Ask glowply's answers (the FAQ loop)
+
+«اسأل glowply» answers only from these docs: glowply.com keeps an OpenAI vector store synced from docs.glowply.com. A missing or wrong answer is almost always a docs gap. To close gaps gradually:
+
+1. **Read the gaps.** The **Assistant insights** page on glowply.com (`wp-admin/admin.php?page=glowply-analytics-insights`) is Claude's report on the questions merchants ask. Read it with WP-CLI on glowply.com's server: `wp glowply-analytics insights-show`, and `wp glowply-analytics assistant-export --new` for newer questions. Work from its `gaps` and `actions` with owner `docs`. Server access is documented with the assistant code (the `glowply-assistant` plugin's notes), not in this repo.
+2. **Verify on a store before writing.** Check the real screens on a local customer store (for example `glowply-customer.test`, opened with Local's auto-login). If the product can't do something, say so plainly; never guess.
+3. **Fix the guide page, then the FAQ.** Put the full answer on the page it belongs to, then add a short entry to the FAQ section **Questions store owners ask / أسئلة يطرحها أصحاب المتاجر** that links to it. Always EN + AR together.
+4. **Merchants' words stay on glowply.com.** Write every FAQ question in your own words. Never copy a merchant's question, name, phone, email or store domain into the docs, a commit, or chat, and delete any exported JSON from the scratchpad when done.
+5. **Deploy, then re-sync the assistant.** Once the change is live on docs.glowply.com, run the sync from glowply.com's site root: `php wp-content/plugins/glowply-helper/tools/sync-assistant-docs.php --wp-config wp-config.php --dry-run --prune` to preview, then again without `--dry-run`. Unchanged pages are skipped by hash, so only edited pages are re-embedded.
