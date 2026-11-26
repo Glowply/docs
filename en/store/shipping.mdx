@@ -1,0 +1,149 @@
+---
+title: "Shipping"
+description: "Set what customers pay for delivery: one price for every governorate or a price per governorate. Hide the governorates you don't deliver to, and choose who ships each order. In Store → Shipping."
+---
+
+**Shipping (الشحن)** is where you set what customers pay for delivery and where you deliver to. You'll find it in your **site dashboard** under **Store → Shipping (المتجر ← الشحن)**. It's also step 5 of the setup checklist on your Home page, **Delivery (التوصيل)**.
+
+<Warning>
+  Until you set a delivery price, checkout shows delivery as **free**. Set your price before you share your store, so orders come in with the right delivery cost.
+</Warning>
+
+## Set your shipping price
+
+The first time you open Shipping, it asks for one thing: your shipping price.
+
+<Steps>
+  <Step title="Open Shipping">
+    Go to **Store → Shipping**, or press **Set up your delivery** on the setup checklist.
+  </Step>
+  <Step title="Enter your price">
+    Under **Set your shipping price (حدد سعر الشحن)**, type what customers pay for delivery, in EGP (ج.م).
+  </Step>
+  <Step title="Save">
+    Press **Save and continue (حفظ ومتابعة)**. Customers now see your delivery price at checkout, and the checklist's Delivery step is done.
+  </Step>
+</Steps>
+
+Every governorate now ships at this price. You can change it any time under **Shipping prices (أسعار الشحن)**, then press **Save changes (حفظ التغييرات)**.
+
+<Tip>
+  Want free delivery? Set the price to **0**.
+</Tip>
+
+## A different price per governorate
+
+Charge more to deliver farther? Under **Shipping prices**, turn on **A different price per governorate (سعر مختلف لكل محافظة)**. Your first price becomes the **Default shipping price (سعر الشحن الافتراضي)**, used for every governorate that has no price of its own. Then, under **Governorates (المحافظات)**, type a price next to each governorate you want to price differently.
+
+To price many governorates at once, choose **Bulk edit (تعديل جماعي)**, tick the ones you want (or **Select all**), type a price, and press **Set price for selected (حط السعر للمحدد)**.
+
+Press **Save changes** when you're done.
+
+## Hide the governorates you don't deliver to
+
+**Governorates** lists every governorate in Egypt, each marked **Visible** or **Hidden**. Turn off a governorate's switch and it disappears from the list at checkout, so customers can't order to it. This works whether you charge one price or a price per governorate.
+
+- Use **Search governorates…** and the **All**, **Visible** and **Hidden** filters to find one quickly.
+- To hide or show several at once, choose **Bulk edit**, tick them, and press **Hide selected (إخفاء المحدد)** or **Show selected (إظهار المحدد)**.
+
+Press **Save changes** to apply.
+
+## Show the delivery price on product pages
+
+Turn on **Show the shipping price on the product page (عرض سعر الشحن في صفحة المنتج)**, and customers see the delivery cost under each product's price before they order.
+
+## Shipping companies
+
+The **Shipping companies (شركات الشحن)** tab sets who delivers your orders.
+
+- **Self shipping (الشحن الذاتي)** is always on. You deliver orders yourself, at your prices on **Shipping prices**.
+- You can also connect a **shipping company** that delivers door to door, collects cash on delivery, and tracks each shipment. You need a business account with that company.
+
+To connect a shipping company:
+
+<Steps>
+  <Step title="Turn it on">
+    On the **Shipping companies** tab, turn on the company's switch.
+  </Step>
+  <Step title="Enter your key">
+    Paste the **API key (مفتاح API)** from your account with the shipping company.
+  </Step>
+  <Step title="Choose how it works">
+    - **Allow customers to open the package (السماح للعملاء بفتح الطرد)** — the courier lets the customer inspect the order before paying.
+    - **Send new orders automatically (إرسال الطلبات الجديدة تلقائياً)** — every new order goes to the company on its own. Turned off, you send each order yourself from its order page.
+  </Step>
+  <Step title="Save">
+    Press **Save changes**. The company shows **Active** once it's connected, or **Needs setup (محتاج إعداد)** while it's on without a key.
+  </Step>
+</Steps>
+
+Connecting a company doesn't switch self shipping off: you choose who ships each order. If a company shows **Contact us (كلمنا)** instead of a switch, [contact support](/en/contact-support) to set it up.
+
+## Ship an order
+
+When an order comes in, open it from **Orders (الطلبات)**. Its **Shipping (الشحن)** box walks you through sending it:
+
+<Steps>
+  <Step title="Choose who ships it">
+    Under **Shipping company (شركة الشحن)**, choose **Self shipping** or the shipping company you connected.
+  </Step>
+  <Step title="Check the details">
+    Check the **Governorate (المحافظة)**, and add **Notes for the courier** if you need to.
+  </Step>
+  <Step title="Send it">
+    For self shipping, press **Confirm shipping (تأكيد الشحن)**: the order moves to **Shipped**. For a shipping company, press the button that sends the order to it. Not ready yet? Press **Save draft (حفظ كمسودة)** and finish later.
+  </Step>
+</Steps>
+
+Once an order is with a shipping company, the box shows its **Tracking number (رقم التتبع)** and **Status (الحالة)**. **Refresh status (تحديث الحالة)** fetches the latest. For a self-shipped order, **Edit shipping (تعديل الشحن)** lets you change its details.
+
+## Shipping statuses
+
+Three order statuses follow an order after it leaves you:
+
+| Status | Arabic | What it means |
+|---|---|---|
+| **Shipped** | تم الشحن | The package has left you. |
+| **Out for delivery** | خرج للتوصيل | The courier is on the way to the customer. |
+| **Returned** | مرتجع | The customer didn't take the order, and it came back. |
+
+Orders with a shipping company update on their own. You can also set these statuses yourself on the order page, like any other status. Your customers see them in their account on your store. More in [Orders](/en/store/orders).
+
+## What isn't available
+
+- **Delivery outside Egypt.** Prices and checkout cover Egypt's governorates.
+- **Prices by area, city or weight.** You set one price for every governorate, or one price per governorate.
+
+## Common questions
+
+<AccordionGroup>
+  <Accordion title="Why does checkout show free delivery?">
+    You haven't set a delivery price yet. Until you do, checkout shows delivery as free. Open **Store → Shipping** and set your price.
+
+    *Also asked: “Why is shipping free on my store?”*
+  </Accordion>
+  <Accordion title="I only deliver to some governorates. How do I stop orders from the others?">
+    Hide the governorates you don't deliver to. Under **Governorates**, turn off their switches, or use **Bulk edit** and **Hide selected**, then press **Save changes**. They disappear from the checkout list.
+
+    *Also asked: “I only deliver in Cairo, how do I close the other governorates?”*
+  </Accordion>
+  <Accordion title="Can I make delivery free?">
+    Yes. Set the shipping price to **0**, for every governorate or only for the ones you choose.
+
+    *Also asked: “Can I offer free shipping?”*
+  </Accordion>
+  <Accordion title="Does Glowply deliver my orders for me?">
+    You deliver them yourself by default. If you want a courier to deliver, collect cash and track your orders, connect a shipping company on the **Shipping companies** tab.
+  </Accordion>
+</AccordionGroup>
+
+## Where to go next
+
+<CardGroup cols={2}>
+  <Card title="Orders" icon="receipt" href="/en/store/orders">
+    See every order customers place and fulfill it.
+  </Card>
+  <Card title="Payments" icon="credit-card" href="/en/store/payments">
+    Choose how customers pay: on delivery, or online.
+  </Card>
+</CardGroup>
