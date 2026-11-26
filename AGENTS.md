@@ -41,7 +41,9 @@ The site dashboard labels below are what the customer actually sees (confirmed a
 | Site management | إدارة الموقع | SSL, custom domain, open editor |
 | custom domain | النطاق المخصص | Requested via support, not self-serve |
 | Store | المتجر | Menu group → Payments (الدفع), Shipping (الشحن) |
-| Payments | الدفع | Under Store |
+| Payments | الدفع | Under Store. Doc page: `store/payments` |
+| Cash on delivery | الدفع عند الاستلام | On Store → Payments; an on/off switch |
+| Online payments | الدفع أونلاين | One provider at a time — Kashier in Egypt: Card, Mobile Wallet, ValU, Souhoola, Aman, Contact Now. No deposits, no bank transfer |
 | Shipping / delivery | الشحن / التوصيل | Under Store |
 | Products | المنتجات | Menu group → Categories, Product options, Reviews, Discounts |
 | Categories | الأقسام | Singular القسم. Was التصنيفات until 2026-10-26 |
@@ -90,7 +92,7 @@ Product facts to keep accurate: address is always `<name>.myglowply.com`; curren
 ## Content boundaries
 
 - Document only what the customer actually sees: the portal and the white-labeled site dashboard. Customers never see raw `wp-admin` chrome.
-- **Never expose internal vendor names** the customer doesn't see: Breakdance (it's "the Builder"), WordPress/WooCommerce (it's "your site"/"the Store"), Enhance, Akedly, Bosta (it's "shipping/delivery"). The current billing page names **no** payment provider — it shows a "certified provider" plus bank-card / mobile-wallet options — so don't name Kashier (or any provider) in customer docs; say "a certified payment provider".
+- **Never expose internal vendor names** the customer doesn't see: Breakdance (it's "the Builder"), WordPress/WooCommerce (it's "your site"/"the Store"), Enhance, Akedly, Bosta (it's "shipping/delivery"). Glowply's own billing page (**Subscription & Billing**) names **no** payment provider — it shows a "certified provider" plus bank-card / mobile-wallet options — so say "a certified payment provider" there. The store's **Payments** screen does name **Kashier** as its online payment provider, so name it when documenting how customers pay a store.
 - Don't document admin-only settings (wallet unit price, plan/trial configuration) — those are internal, not customer-facing.
 - Don't reproduce the full WooCommerce or Breakdance manuals. Cover Glowply's UI and the common tasks thoroughly; keep deep third-party edge cases out.
 - One trial signup per phone number; Egyptian phone numbers at signup; one site per account — reflect these limits where relevant.
