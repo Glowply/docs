@@ -1,0 +1,187 @@
+---
+title: "Shipping companies"
+description: "Connect Aramex, DHL Express or J&T Express to your store, send orders to them from the order page, print the waybill and follow each shipment. In Store → Shipping → Shipping companies."
+---
+
+A **shipping company** collects your parcels, delivers them to your customers and tells your store where each one is. You can connect **Aramex (أرامكس)**, **DHL Express** and **J&T Express** to your store. You'll find them in your **site dashboard** under **Store → Shipping (المتجر ← الشحن)**, on the **Shipping companies (شركات الشحن)** tab.
+
+<Note>
+  You need your own account with the company. Glowply connects your store to that account; the company delivers your orders and charges you under your agreement with it.
+</Note>
+
+## What connecting does
+
+- **Order details go to the company.** The customer's name, address and phone number, and the amount to collect. Only for the orders you choose to ship with that company.
+- **The tracking number and the shipment's status come back.** The order's status updates on its own: shipped, out for delivery, completed or returned.
+- **You print the waybill from the order page.** It is ready once the order is sent.
+
+Connecting a company doesn't switch **Self shipping (الشحن الذاتي)** off, and you can connect more than one company. You choose who ships each order.
+
+## Choose a company
+
+| Company | Cash on delivery | Cancel a shipment from your dashboard | Asks on each order |
+|---|---|---|---|
+| **Aramex** | Yes | No | The customer's city |
+| **DHL Express** | No. For orders paid online only | No | Nothing |
+| **J&T Express** | Yes | Yes, until the parcel is picked up | The customer's city and area |
+
+## Before you start
+
+Each company gives you account details to type into your store. Have them ready:
+
+<AccordionGroup>
+  <Accordion title="Aramex">
+    - **Username** and **Password** — the email and password you sign in to aramex.com with.
+    - **Account number**, **Account PIN** and **Account entity** — from your Aramex account manager or Aramex support. The PIN and the entity are not shown in your Aramex dashboard, so ask for them. The entity is three letters for the Aramex branch your account is registered at, for example `CAI` for Cairo.
+    - **Account country** — two letters, already set to `EG` for Egypt.
+  </Accordion>
+  <Accordion title="DHL Express">
+    - **API username** and **API password** — ask your DHL account manager for "MyDHL API" access, or request it on DHL's developer site. DHL then gives you both.
+    - **DHL account number** — the shipper account number on your DHL contract and invoices.
+
+    DHL usually gives you test details first. Under **Advanced settings (إعدادات متقدمة)**, set **Environment** to **Test** while you use them, and to **Live** once DHL approves your account for real shipments.
+  </Accordion>
+  <Accordion title="J&T Express">
+    J&T gives you two pairs of details, from two places:
+
+    - **API account** and **Private key** — in your account on J&T's open platform, after J&T approves it.
+    - **Customer code** and **Customer code password** — from the J&T branch that handles your shipments.
+
+    J&T only accepts governorate, city and area names from its own list. Ask your J&T branch for the exact names of your pickup address, and for the list you'll use for your customers' addresses.
+  </Accordion>
+</AccordionGroup>
+
+## Connect a company
+
+<Steps>
+  <Step title="Open the company">
+    Go to **Store → Shipping**, open the **Shipping companies** tab, and press **Connect (ربط)** on the company's card.
+  </Step>
+  <Step title="Enter your account details">
+    Fill in the fields in the first section, which carries the company's name (for example **Your Aramex account details**). Next to each field you'll see the company's own name for it, so you can match it to what the company sent you.
+  </Step>
+  <Step title="Say where parcels are collected from">
+    Under **Where parcels are collected from (الشحنات بتتستلم منين)**, type the **Pickup phone number**. The sender name, pickup address and pickup city are optional: left empty, your store's name and address are used. J&T Express also asks for the pickup governorate and area, as J&T names them.
+  </Step>
+  <Step title="Connect">
+    Press **Connect (ربط)**. Your store checks the details with the company first. When the company accepts them, you return to **Shipping companies** and the card shows **Connected (مربوطة)**.
+  </Step>
+</Steps>
+
+If the company doesn't accept the details, the reason appears at the top of the form, the fields to check are highlighted, and nothing is saved. Correct them and press **Connect** again.
+
+<Tip>
+  **Advanced settings (إعدادات متقدمة)** already hold the usual values. Change one only if the company told you to.
+</Tip>
+
+## Ship an order
+
+Open the order from **Orders (الطلبات)**. Its **Shipping (الشحن)** box walks you through it:
+
+<Steps>
+  <Step title="Choose the company">
+    Under **Shipping company (شركة الشحن)**, choose the company you connected.
+  </Step>
+  <Step title="Answer what the company asks">
+    - **Aramex** asks for the customer's city in English, as Aramex names it, for example `Cairo` or `Alexandria`.
+    - **J&T Express** asks for the customer's city and area, as J&T names them.
+    - **DHL Express** asks for nothing more.
+
+    Check the **Governorate (المحافظة)**, and add **Notes for the courier** if you need to.
+  </Step>
+  <Step title="Send it">
+    Press **Send to … (إرسال إلى …)**, which carries the company's name, and confirm. Not ready yet? Press **Save draft (حفظ كمسودة)** and finish later.
+  </Step>
+</Steps>
+
+If the company refuses the order, its reason appears in red at the top of the box and the order isn't sent. Fix what it names and send again.
+
+**Cash on delivery.** For an order the customer pays on delivery, the company is asked to collect the order's total. For an order paid online, it collects nothing.
+
+<Warning>
+  DHL Express doesn't collect cash on delivery. Your store refuses to send it an order that is still to be paid on delivery. Ship that order with another company, or have the customer pay online first.
+</Warning>
+
+## After you send
+
+The box now shows **Shipped with**, the **Tracking number (رقم التتبع)** and the **Status (الحالة)**, and after the first update, when it was **Last checked**.
+
+- **Print waybill (طباعة بوليصة الشحن)** opens the waybill to print and stick on the parcel. With J&T Express the waybill can take a minute to be ready after you send; if it isn't, try again shortly.
+- **Refresh status (تحديث الحالة)** asks the company for the latest now. You don't have to: your store checks every hour on its own.
+- **Track on DHL Express** opens DHL's own tracking page for the shipment.
+- **Cancel shipment (إلغاء الشحنة)** appears for J&T Express until the parcel is picked up. The order itself stays as it is, and the box shows the form again so you can send the order another way. To cancel an Aramex or DHL Express shipment, contact the company.
+
+### How the order's status follows the shipment
+
+| Status in the Shipping box | What it means | The order becomes |
+|---|---|---|
+| **Waiting for pickup** | The company has the order. The parcel is still with you. | Stays as it is |
+| **Picked up** / **On its way** | The company collected the parcel and is moving it. | **Shipped (تم الشحن)** |
+| **Out for delivery** | The courier is on the way to the customer. | **Out for delivery (خرج للتوصيل)** |
+| **Delivered** | The customer received it. | **Completed (مكتمل)** |
+| **Returned to you** | The parcel came back to you. | **Returned (مرتجع)** |
+| **Needs attention** | A hold, a failed attempt or a refusal. | Stays as it is; the company's message appears in the box and in the order's notes |
+
+Once an order is completed, returned or cancelled, later updates from the company no longer change it. More about these statuses in [Shipping](/en/store/shipping#shipping-statuses).
+
+## Change your details or disconnect
+
+On the **Shipping companies** tab, press **Manage (إدارة الربط)** on a connected company.
+
+- **To change details**, edit them and press **Save changes (حفظ التغييرات)**. Password fields stay empty: leave one empty to keep the saved value.
+- **To disconnect**, press **Disconnect … (فصل …)** at the bottom. You can no longer send new orders to that company. Orders already sent keep their tracking number, and their status stops updating.
+
+## What isn't available
+
+- **Sending new orders to these companies automatically.** You send each order from its page.
+- **Cash on delivery with DHL Express.**
+- **Cancelling an Aramex or DHL Express shipment from your dashboard.** Contact the company.
+- **Choosing the city or area from a list.** You type them as the company names them.
+- **Delivery outside Egypt.** Checkout covers Egypt's governorates.
+- **The company's own delivery prices at checkout.** Customers pay the prices you set under **Shipping prices (أسعار الشحن)**.
+
+## Common questions
+
+<AccordionGroup>
+  <Accordion title="The company didn't accept my details. What do I check?">
+    Check each field against what the company sent you; next to each field you'll see the company's own name for it. With **Aramex**, the PIN and the entity come from Aramex support, not from your Aramex dashboard. With **DHL Express**, make sure **Environment** under **Advanced settings** matches the details you have: Test or Live. With **J&T Express**, the API account and private key come from J&T's open platform, and the customer code and its password come from your J&T branch. If the details are right and the company still refuses them, ask the company whether your account is active for API use, or [contact support](/en/contact-support).
+
+    *Also asked: “Why won't Aramex connect to my store?” · “It says my details are wrong but I'm sure they're right.”*
+  </Accordion>
+  <Accordion title="The company says it doesn't recognise the city or the area.">
+    Aramex and J&T Express only accept names from their own lists. Type the city (and for J&T, the area) exactly as the company writes it, then send again. Aramex wants the city in English. Ask the company for its list if you don't have it.
+
+    *Also asked: “It says the city is wrong, what do I write?”*
+  </Accordion>
+  <Accordion title="How do I print the waybill?">
+    Open the order and press **Print waybill (طباعة بوليصة الشحن)** in its **Shipping** box. It opens in a new tab, ready to print. The button appears after the order is sent to the company.
+
+    *Also asked: “Where do I get the shipping label from?”*
+  </Accordion>
+  <Accordion title="The order's status hasn't changed. Why?">
+    Your store asks the company every hour. Press **Refresh status (تحديث الحالة)** in the order's **Shipping** box to ask now. The status only moves when the company records a new step, such as picking the parcel up.
+
+    *Also asked: “The parcel was delivered but the order still says shipped.”*
+  </Accordion>
+  <Accordion title="Can I use more than one shipping company?">
+    Yes. Connect as many as you have accounts with, and choose one for each order in its **Shipping** box. Self shipping stays available too.
+
+    *Also asked: “Can I ship some orders with Aramex and some with J&T?”*
+  </Accordion>
+  <Accordion title="Do I pay Glowply for shipping?">
+    No. The shipping company charges you under your agreement with it. Your customers pay the delivery prices you set in **Store → Shipping**.
+
+    *Also asked: “Who do I pay for the shipping, Glowply or the company?”*
+  </Accordion>
+</AccordionGroup>
+
+## Where to go next
+
+<CardGroup cols={2}>
+  <Card title="Shipping" icon="truck" href="/en/store/shipping">
+    Set what customers pay for delivery and where you deliver to.
+  </Card>
+  <Card title="Orders" icon="receipt" href="/en/store/orders">
+    See every order customers place and fulfill it.
+  </Card>
+</CardGroup>
